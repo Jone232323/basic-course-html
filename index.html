@@ -8,7 +8,7 @@
 
 <body>
     <!-- тег Заголовак h1, h2, h3, h4, h5, h6 -->
-    <h1>How To Avoid Wasting Your Most Valuable Online Asset - TIME!</h1>
+    <h1 id="header">How To Avoid Wasting Your Most Valuable Online Asset - TIME!</h1>
 
     <!-- тег для вставки изображения атрибут align указывает оптикание текста Устарел-->
     <img src="images/alarm.jpg" alt="будильник" width="307px" height="450px" align="right" hspace="30" vspace="20">
@@ -113,8 +113,8 @@
     <!-- тег ссылки <a></a> чтобы ссылка открывалась в новом окне добавляем атрибут target="_blank",_parent-в этом же окне,_self в этом же окне,_top в этом же окне -->
     <!-- атрибут title="" подсказка куда ведёт эта ссылка -->
     <p>
-        use this utility <a href="http://www.howtocorp.com/typepilot"
-            target="_blank" title="Программа type pilot">http://www.howtocorp.com/typepilot</a> , but
+        use this utility <a href="http://www.howtocorp.com/typepilot" target="_blank"
+            title="Программа type pilot">http://www.howtocorp.com/typepilot</a> , but
         there are lots of other useful typing assistant utilities
         available.
     </p>
@@ -143,7 +143,13 @@
         FEEDBACK and others for JOINT VENTURES + many more.
     </p>
 
+    <!-- добавили ссылку на скачивания файла time.pdf -->
     <p><a href="files/time.pdf" target="_blank">Скачать это статью в PDF</a></p>
+
+    <!-- Якорная ссылка переход к началу статьи -->
+    <p><a href="#header">Перейти к началу строки</a></p>
+    <!-- Якорная ссылка переход к элементу test например находящимуся на странице about.html
+    <p><a href="about.html#test">Перейти к началу строки</a></p> -->
 
 
 </body>
