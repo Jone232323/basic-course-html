@@ -10,7 +10,7 @@
 <body>
     <!-- создание формы  -->
     <form action="formdata.php" method="post" name="form1">
-        <p>Введите ваше имя:<input type="text" name="name"></p>
+        <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
         <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
         <p><label>Введите ваше имя:<input type="text" name="name"></label></p>
         <!-- сделаем поле длиннее -->
@@ -57,6 +57,10 @@
                 <option value="4">четыре</option>
             </select>
         </p>
+
+        <!-- добавляем элемент текстовой области -->
+        <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
+        <textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных" placeholder="напиши">Тестовый текст...</textarea>
 
 
 
