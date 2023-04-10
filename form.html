@@ -33,6 +33,32 @@
             <label><input type="checkbox" name="pen">Ручка</label>
         </p>
 
+        <!-- добавляем элемент выбора select -->
+        <!-- атрибут size указывает сколько видимых значений сразу будет открыто -->
+        <!-- атрибут multiple используется для возможности выбора нескольких значений -->
+        <p>Сколько часов вы спите?</p>
+        <p>
+            <select name="hour" id="hour1" size="4" multiple>
+                <option>один</option>
+                <option>два</option>
+                <option>три</option>
+                <option>четыре</option>
+            </select>
+        </p>
+
+        
+        <p>Сколько часов вы спите второй вариант?</p>
+        <p>
+            <select name="hour" id="hour1" >
+                <option>один</option>
+                <option value="2">два</option>
+                <!-- атрибут selected указывает что данное значение будет по умолчанию -->
+                <option selected>три</option>
+                <option value="4">четыре</option>
+            </select>
+        </p>
+
+
 
 
 
