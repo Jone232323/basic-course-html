@@ -46,10 +46,10 @@
             </select>
         </p>
 
-        
+
         <p>Сколько часов вы спите второй вариант?</p>
         <p>
-            <select name="hour" id="hour1" >
+            <select name="hour" id="hour1">
                 <option>один</option>
                 <option value="2">два</option>
                 <!-- атрибут selected указывает что данное значение будет по умолчанию -->
@@ -60,11 +60,20 @@
 
         <!-- добавляем элемент текстовой области -->
         <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
-        <textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных" placeholder="напиши">Тестовый текст...</textarea>
+        <p><textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных"
+                placeholder="напиши">Тестовый текст...</textarea></p>
 
+        <!-- добавляем кнопка отправки данных -->
+        <p><input type="submit" name="submit-btn" value="Отправить">
+            <!-- добавляем кнопка очистки -->
+            <input type="reset" name="reset-btn" value="Сброс">
+        </p>
 
+        <!-- кнопки своя картинка отправка  -->
+        <p><input type="image" src="images/ibutton.png" name="img-btn"></p>
 
-
+        <!-- просто кнопк не только для формы нужна будет для работы с Javascryp sql  -->
+        <p><input type="button" value="Кнопка" name="button"></p>
 
     </form>
 
