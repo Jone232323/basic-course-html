@@ -7,8 +7,17 @@
     </head>
     <body>
         <!-- создание формы  -->
-        <form action="formdata.php" method="post" name="form1">
-            
+        <form action="formdata.php" method="post" name="form1">            
+            <p>Введите ваше имя:<input type="text" name="name"></p>
+            <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
+            <p><label>Введите ваше имя:<input type="text" name="name"></label></p>
+            <!-- сделаем поле длиннее -->
+            <p><label>Введите ваше имя:<input type="text" name="name" size="30"></label></p>
+            <!-- ограничение по количеству вводу символов -->
+            <p><label>Введите ваше имя(мак 10):<input type="text" name="name" size="30" maxlength="10"></label></p>
+            <!-- поля ввода для пароля -->
+            <p><label>Введите ваше пароль(мак 10):<input type="password" name="name" size="30" maxlength="10"></label></p>
+
 
         </form>
         
