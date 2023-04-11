@@ -35,7 +35,8 @@
             <!-- добавили кнопки checkbox -->
             <p>Какими инструментами вы пользуетесь?</p>
             <p>
-                <label><input type="checkbox" name="ez" checked>Ежедневник</label>
+                <!-- добавили атрибут disabled делает элемент неактивным -->
+                <label><input type="checkbox" name="ez" checked disabled>Ежедневник</label>
                 <label><input type="checkbox" name="pen">Ручка</label>
             </p>
             <!-- добавляем элемент выбора select -->
@@ -64,10 +65,10 @@
             </select>
         </p>
 
-        <!-- добавляем элемент текстовой области -->
+        <!-- добавляем элемент текстовой области и к нему применим атрибут  readonly только для чтения-->
         <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
         <p><textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных"
-                placeholder="напиши">Тестовый текст...</textarea></p>
+                placeholder="напиши" readonly>Тестовый текст...</textarea></p>
 
         <!-- добавляем кнопка отправки данных -->
         <p><input type="submit" name="submit-btn" value="Отправить">
