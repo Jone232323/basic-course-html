@@ -9,21 +9,21 @@
 
 <body>
     <!-- создание формы  -->
-    <form action="formdata.php" method="post" name="form1">
+    <form action="formdata.php" method="get" name="form1">
         <!-- fieldset применяется для разграничения -->
         <fieldset>
             <!-- чтобы рамка была именная используется тег legend -->
             <legend>ввод личных данных</legend>
             <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
             <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
-            <p><label>Введите ваше имя:<input type="text" name="name"></label></p>
+            <p><label>Введите ваше имя:<input type="text" name="name1"></label></p>
         </fieldset>
         <!-- сделаем поле длиннее -->
-        <p><label>Введите ваше имя:<input type="text" name="name" size="30"></label></p>
+        <p><label>Введите ваше имя:<input type="text" name="name2" size="30"></label></p>
         <!-- ограничение по количеству вводу символов -->
-        <p><label>Введите ваше имя(мак 10):<input type="text" name="name" size="30" maxlength="10"></label></p>
+        <p><label>Введите ваше имя(мак 10):<input type="text" name="name3" size="30" maxlength="10"></label></p>
         <!-- поля ввода для пароля -->
-        <p><label>Введите ваше пароль(мак 10):<input type="password" name="name" size="30" maxlength="10"></label></p>
+        <p><label>Введите ваше пароль(мак 10):<input type="password" name="password" size="30" maxlength="10"></label></p>
 
         <fieldset>
             <legend>Вопросы</legend>
@@ -36,7 +36,7 @@
             <p>Какими инструментами вы пользуетесь?</p>
             <p>
                 <!-- добавили атрибут disabled делает элемент неактивным -->
-                <label><input type="checkbox" name="ez" checked disabled>Ежедневник</label>
+                <label><input type="checkbox" name="ez" checked>Ежедневник</label>
                 <label><input type="checkbox" name="pen">Ручка</label>
             </p>
             <!-- добавляем элемент выбора select -->
@@ -68,7 +68,7 @@
         <!-- добавляем элемент текстовой области и к нему применим атрибут  readonly только для чтения-->
         <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
         <p><textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных"
-                placeholder="напиши" readonly>Тестовый текст...</textarea></p>
+                placeholder="напиши">Тестовый текст...</textarea></p>
 
         <!-- добавляем кнопка отправки данных -->
         <p><input type="submit" name="submit-btn" value="Отправить">
