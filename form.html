@@ -10,9 +10,14 @@
 <body>
     <!-- создание формы  -->
     <form action="formdata.php" method="post" name="form1">
-        <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
-        <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
-        <p><label>Введите ваше имя:<input type="text" name="name"></label></p>
+        <!-- fieldset применяется для разграничения -->
+        <fieldset>
+            <!-- чтобы рамка была именная используется тег legend -->
+            <legend>ввод личных данных</legend>
+            <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
+            <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
+            <p><label>Введите ваше имя:<input type="text" name="name"></label></p>
+        </fieldset>
         <!-- сделаем поле длиннее -->
         <p><label>Введите ваше имя:<input type="text" name="name" size="30"></label></p>
         <!-- ограничение по количеству вводу символов -->
@@ -20,31 +25,32 @@
         <!-- поля ввода для пароля -->
         <p><label>Введите ваше пароль(мак 10):<input type="password" name="name" size="30" maxlength="10"></label></p>
 
-        <!-- добавляем радио кнопку name="time" говорит нам что две кнопки находятся в одной группе-->
-        <!-- атрибут checked делает кнопку по умолчанию  -->
-        <p>Любите ли вы экономить время? <label>Да<input type="radio" name="time" value="yes" checked></label>
-            <label>Нет<input type="radio" name="time" value="no"></label>
-        </p>
-
-        <!-- добавили кнопки checkbox -->
-        <p>Какими инструментами вы пользуетесь?</p>
-        <p>
-            <label><input type="checkbox" name="ez" checked>Ежедневник</label>
-            <label><input type="checkbox" name="pen">Ручка</label>
-        </p>
-
-        <!-- добавляем элемент выбора select -->
-        <!-- атрибут size указывает сколько видимых значений сразу будет открыто -->
-        <!-- атрибут multiple используется для возможности выбора нескольких значений -->
-        <p>Сколько часов вы спите?</p>
-        <p>
-            <select name="hour" id="hour1" size="4" multiple>
-                <option>один</option>
-                <option>два</option>
-                <option>три</option>
-                <option>четыре</option>
-            </select>
-        </p>
+        <fieldset>
+            <legend>Вопросы</legend>
+            <!-- добавляем радио кнопку name="time" говорит нам что две кнопки находятся в одной группе-->
+            <!-- атрибут checked делает кнопку по умолчанию  -->
+            <p>Любите ли вы экономить время? <label>Да<input type="radio" name="time" value="yes" checked></label>
+                <label>Нет<input type="radio" name="time" value="no"></label>
+            </p>
+            <!-- добавили кнопки checkbox -->
+            <p>Какими инструментами вы пользуетесь?</p>
+            <p>
+                <label><input type="checkbox" name="ez" checked>Ежедневник</label>
+                <label><input type="checkbox" name="pen">Ручка</label>
+            </p>
+            <!-- добавляем элемент выбора select -->
+            <!-- атрибут size указывает сколько видимых значений сразу будет открыто -->
+            <!-- атрибут multiple используется для возможности выбора нескольких значений -->
+            <p>Сколько часов вы спите?</p>
+            <p>
+                <select name="hour" id="hour1" size="4" multiple>
+                    <option>один</option>
+                    <option>два</option>
+                    <option>три</option>
+                    <option>четыре</option>
+                </select>
+            </p>
+        </fieldset>
 
 
         <p>Сколько часов вы спите второй вариант?</p>
