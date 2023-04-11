@@ -1,7 +1,7 @@
 <?php
-echo $_GET['name'];
-echo $_GET['password'];
-echo $_GET['text'];
+echo $_POST['name'];
+echo $_POST['password'];
+echo $_POST['text'];
 
 
 ?>
