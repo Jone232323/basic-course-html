@@ -12,7 +12,8 @@
 
     <!-- тег для вставки изображения атрибут align указывает оптикание текста Устарел-->
     <!-- с сылка на изображении -->
-    <a href="object.html" target="_blank"><img src="images/alarm.jpg" alt="будильник" width="307px" height="450px" align="right" hspace="30" vspace="20"></a>
+    <a href="object.html" target="_blank"><img src="images/alarm.jpg" alt="будильник" width="307px" height="450px"
+            align="right" hspace="30" vspace="20"></a>
 
     <!-- тег абзаца p-->
     <p> If you're involved in an internet marketing business, then
@@ -277,13 +278,27 @@
     <!-- атрибуты hspace и vspace создают отступы от картинки по горизонтали и по вертикали соответственно -->
     <!-- атрибут usemap указывает какую карту мы должны использовать -->
     <p>
-        <img src="images/time.jpg" alt="Покупка часов" width="600px" height="214px" hspace="20" vspace="20" border="1" usemap="#forTime">
+        <img src="images/time.jpg" alt="Покупка часов" width="600px" height="214px" hspace="20" vspace="20" border="1"
+            usemap="#forTime">
     </p>
     <!-- вставляем карту изображений при помощи тега <map name=""></map> -->
     <map id="forTime" name="map1">
         <!-- создаём область которая будет реагировать на наведение мыши и соответственно в эту область мы внесём ссылку -->
         <!-- атрибут shape задаёт форму данной области, можно прямоугольник(rect) круг(circle) и многоугольник(poly) -->
         <area shape="rect" coords="40,15,295,80" href="form.html" alt="купить настенные часы">
+    </map>
+
+    <!-- вставляем картинку для определения автоматических координат -->
+    <p>
+        <img src="images/time.jpg" alt="Покупка часов" width="600px" height="214px" hspace="20" vspace="20"
+            usemap="#formap">
+    </p>
+    <!-- вставляем карту изображений при помощи тега <map name=""></map> -->
+    <map id="formap" name="map2">
+        <area shape=" rect" alt="Купить настенные часы" title="" coords="41,13,287,80" href="form.html"
+            target="_blank">
+        <area shape="rect" alt="Купить песочные часы" title="" coords="309,13,553,81" href="object.html"
+            target="_blank">
     </map>
 
 
