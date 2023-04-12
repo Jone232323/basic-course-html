@@ -4,7 +4,7 @@
 <head>
     <!-- указываем браузеру что это текс html, что это html документ с кодировкой utf-8 -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+
     <!-- refresh - который говорит браузеру о том что нужно перезагружать страницу каждые 5 секунд и более того по истечению этого времени перейти на другой сайт -->
     <!-- <meta http-equiv="refresh" content="10; url=http://ya.ru"> -->
     <!-- запрещает браузерам кэшировать страницу всегда загружает её заново -->
@@ -33,7 +33,7 @@ revisit тоже не нужен-->
         you've probably already come face-to-face with your #1
         enemy - "Time Wasting".</p>
 
-
+    <!-- div создаёт невидимый блок на который при помощи CSS мы можем воздействовать -->
     <div>
         <!-- атрибут выравнивание например по центру align="center", тег strong- делает текс жирным УСТАРЕЛ ИСПОЛЬЗОВАТЬ CSS-->
         <p align="center">What you need to know is that "Time Is Money". <strong>
@@ -41,7 +41,9 @@ revisit тоже не нужен-->
                 applies even more to the online world,
             </strong> than in regular
             business.</p>
-        <p>You see, anyone can become an online entrepreneur. It
+
+            <!-- тег <span> - похож на div, но больше подходит для локального применения, например в CSS выделить жирным фразу -->
+        <p>You see, anyone <span> can become an online</span> entrepreneur. It
             doesn't involve start-up capital or expensive equipment to
             start. A low grade PC and a net connection is all you need.</p>
         <p>And since cash isn't really a barrier, time-management has
@@ -302,13 +304,11 @@ revisit тоже не нужен-->
 
     <!-- вставляем картинку для определения автоматических координат -->
     <p>
-        <img src="images/time.jpg" alt="Покупка часов" width="600" height="214" hspace="20" vspace="20"
-            usemap="#map2">
+        <img src="images/time.jpg" alt="Покупка часов" width="600" height="214" hspace="20" vspace="20" usemap="#map2">
     </p>
     <!-- вставляем карту изображений при помощи тега <map name=""></map> -->
     <map id="map2" name="map2">
-        <area shape="rect" alt="Купить настенные часы" title="" coords="41,13,287,80" href="form.html"
-            target="_blank">
+        <area shape="rect" alt="Купить настенные часы" title="" coords="41,13,287,80" href="form.html" target="_blank">
         <area shape="rect" alt="Купить песочные часы" title="" coords="309,13,553,81" href="object.html"
             target="_blank">
     </map>
