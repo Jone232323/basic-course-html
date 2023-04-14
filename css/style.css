@@ -9,3 +9,11 @@ p, h4, #myList {
 .new {
     color: aqua;
 }
+
+ul li{
+    color: green;
+}
+
+#bt a{
+    color: rgb(94, 2, 252);
+}
