@@ -10,10 +10,23 @@ p, h4, #myList {
     color: aqua;
 }
 
-ul li{
-    color: green;
+/* псевдо селекторы */
+/* a:link обычное состояние ссылки ещё никто не нажимал */
+a:link{
+    color: black;
+}
+/* a:visited посещённая ссылка  */
+a:visited{
+    color: coral;
 }
 
-#bt a{
-    color: rgb(94, 2, 252);
+/* a:hover когда на ссылку наведена мышь */
+a:hover{
+    color: darkgreen;
+}
+
+/* a:active во время нажатия на ссылку */
+
+a:active{
+    color: beige;
 }
