@@ -1,7 +1,10 @@
-p, h4, #myList {
+p,
+h4,
+#myList {
     color: #db9595;
 }
-p{
+
+p {
     /* через запятую можно установить разные шрифты, если браузер не нашёл на ПК пользователя первый 
     шрифт то он будет искать второй и т.д. */
     /* sans-serif без засечек */
@@ -34,21 +37,34 @@ p{
 
 /* псевдо селекторы */
 /* a:link обычное состояние ссылки ещё никто не нажимал */
-a:link{
+a:link {
     color: black;
 }
+
 /* a:visited посещённая ссылка  */
-a:visited{
+a:visited {
     color: coral;
 }
 
 /* a:hover когда на ссылку наведена мышь */
-a:hover{
-    color: darkgreen;    
+a:hover {
+    color: darkgreen;
 }
 
 /* a:active во время нажатия на ссылку */
 
-a:active{
+a:active {
     color: beige;
+}
+
+.new2 {
+    color: black;
+    /* italic - курсив */
+    font-style: italic;
+}
+
+.new3 {
+    color: brown;
+    /* жирность шрифта  normal, bold - полужирный, 100 - 900*/
+    font-weight: bold;
 }
