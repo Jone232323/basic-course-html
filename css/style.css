@@ -68,3 +68,7 @@ a:active {
     /* жирность шрифта  normal, bold - полужирный, 100 - 900*/
     font-weight: bold;
 }
+.new4{
+    /* underline - подчёркнуты, line-through - перечёркнутый, overline - верхнее подчёркивание */
+    text-decoration: line-through;
+}
