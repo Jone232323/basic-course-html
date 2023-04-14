@@ -25,6 +25,9 @@ p {
 
     font-size: 16px;
 
+    /* задаём красную строку */
+    text-indent: 30px;
+
 }
 
 #header {
