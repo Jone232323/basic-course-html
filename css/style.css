@@ -72,3 +72,8 @@ a:active {
     /* underline - подчёркнуты, line-through - перечёркнутый, overline - верхнее подчёркивание */
     text-decoration: line-through;
 }
+
+a{
+    /* убираем подчёркивание с сылок */
+    text-decoration: none;
+}
