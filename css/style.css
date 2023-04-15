@@ -52,6 +52,14 @@ p {
     /* lowercase - маленькими буквами */
     /* capitalize - каждая первая буква в слове с большой буквы */
     text-transform: capitalize;
+
+    /* Добавляем рамку */
+    border-width: 2px;/* толщина рамки */
+    border-top-width: 0px; /* задали толщину верхней грани 0 */
+    border-style: groove;/* стиль рамки , 8 видов. Например dotted - точечный пунктир, dashed - пунктир, solid - сплашная
+    , double - двойная, groove and ridge - выглядет как обьёмная(два слитных цвета рамки одит ярче другой светлее)
+    ,inset and outset - две грани более яркие а, две более тусклые */
+    border-color: gold;/* цвет рамки */
 }
 
 .new {
