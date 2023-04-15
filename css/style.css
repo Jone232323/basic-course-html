@@ -56,6 +56,15 @@ p {
 
 .new {
     color: aqua;
+
+    /* Сокращённая форма записи для шрифта*/
+    /* font-style: italic; курсив
+    font-weight: bold; жирный
+    font-size: 16px;размер 
+    font-family: Tahoma;шрифт*/
+    font: italic bold 16px Tahoma;
+    /* а можно и так: font: 16px Tahoma; */
+    
 }
 
 /* псевдо селекторы */
