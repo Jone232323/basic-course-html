@@ -135,6 +135,9 @@ ul{
     lower-alpha - (a,b,c,d), lower-greek - (alpha, beta, gamma), lower-latin(a,b,c,d), lower-roman - римскии цыфры,
     upper-alpha - (A,B,C,D,E), upper-latin - (A,B,C,D,E), upper-roman - большие римские цифры,
     inherit - значение должно быть унаследованно от элемента родителя */
-    list-style-type:upper-roman;
+    /* list-style-type:upper-roman; */
+
+    /* маркер ввиде изображения */
+    list-style-image: url(../images/marker.png);
 
 }
