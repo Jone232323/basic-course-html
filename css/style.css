@@ -138,12 +138,16 @@ ul{
     /* list-style-type:upper-roman; */
 
     /* маркер ввиде изображения */
-    list-style-image: url(../images/marker.png);
+    /* list-style-image: url(../images/marker.png); */
 
     /* расположения маркера: 
     outside - снаруже рамки
     inside - внутри рамки*/
-    list-style-position:inside;
+    /* list-style-position:inside; */
+
+    list-style:inside url(../images/marker.png) ;
+
+
 }
 
 ul li {
