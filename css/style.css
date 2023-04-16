@@ -128,3 +128,13 @@ a {
     расстояния между пробелавми */
     text-align: justify;
 }
+
+ul{
+    /* внешний вид маркера: circle - круг, decimal-цифрами, decimal-leading-zero - цифры 01 02 03, armenian - армянский нумерация,
+    square - ввиде квадрата, disc - ввиде заполненого круга, none - без маркера, georgian - грузинская нумерация,
+    lower-alpha - (a,b,c,d), lower-greek - (alpha, beta, gamma), lower-latin(a,b,c,d), lower-roman - римскии цыфры,
+    upper-alpha - (A,B,C,D,E), upper-latin - (A,B,C,D,E), upper-roman - большие римские цифры,
+    inherit - значение должно быть унаследованно от элемента родителя */
+    list-style-type:upper-roman;
+
+}
