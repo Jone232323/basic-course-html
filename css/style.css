@@ -140,4 +140,12 @@ ul{
     /* маркер ввиде изображения */
     list-style-image: url(../images/marker.png);
 
+    /* расположения маркера: 
+    outside - снаруже рамки
+    inside - внутри рамки*/
+    list-style-position:inside;
+}
+
+ul li {
+    border: 1px solid gray;
 }
