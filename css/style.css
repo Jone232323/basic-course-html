@@ -1,11 +1,14 @@
 /* наследование сделаем для всей html страници 
 -<h..>заголовки НЕ НАСЛЕДУЮТ РАЗМЕР
 -<a href> ссылки не наследуют цвет
+посмотреть какие свойства наследуются, а какие Нет можно здесь https://www.w3.org/TR/2016/WD-CSS22-20160412/propidx.html
 */
 body{
     font: 14px Tahoma;
-    color: blue;
-    border: 2px solid gold;
+    color: #333333;
+
+    /* рамка не наследуется для всех элементов */
+    /* border: 2px solid gold; */
 }
 
 
@@ -152,6 +155,7 @@ ul{
     /* list-style-position:inside; */
 
     list-style:inside url(../images/marker.png) ;
+    color: red;
 
 
 }
