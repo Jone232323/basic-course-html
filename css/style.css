@@ -79,6 +79,16 @@ p {
 
     /* сокращенные записи для рамки: */
     border: 4px solid goldenrod;
+
+    /* задаём для всех сторон */
+    /* padding: 40px; */
+
+    /* задаём для всех РАЗНЫХ сторон */
+    padding: 10px 20px 30px 40px;
+
+    /* padding: 10px 40px; в таком случае top and bottom по 10, а left and right по 40. ТОЖЕ САМОЕ и для margin */
+    
+    margin: 20px; 
 }
 
 .new {
