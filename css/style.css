@@ -1,8 +1,14 @@
-p,
-h4,
-#myList {
-    color: #db9595;
+/* наследование сделаем для всей html страници 
+-<h..>заголовки НЕ НАСЛЕДУЮТ РАЗМЕР
+-<a href> ссылки не наследуют цвет
+*/
+body{
+    font: 14px Tahoma;
+    color: blue;
+    border: 2px solid gold;
 }
+
+
 
 p {
     /* через запятую можно установить разные шрифты, если браузер не нашёл на ПК пользователя первый 
@@ -11,7 +17,7 @@ p {
     /* serif - с засечками */
     /* monospace - каждая буква занимает одну и туже ширину */
     /* cursive - кросивый шрифт  */
-    font-family: "Comic Sans MS";
+    /* font-family: "Comic Sans MS"; */
     /* изначально(без задания размера) браузер показывает 100% 
     приимущество изменения по  % данного шрифта в том что при изменения размера экрана будь то 
     ПК, планшет или телефон хорошо масштабируется*/
@@ -23,7 +29,7 @@ p {
     /* pt - в пунктах 1.72 дюйма или 0.35 мм(10pt это 3.5мм) (базовый размер это 12pt) */
     /* ключевые слова -  по умолчанию medium(средний) small = medium*0.8, large = medium*1.2  */
 
-    font-size: 16px;
+    /* font-size: 16px; */
 
     /* задаём красную строку */
     text-indent: 30px;
@@ -43,7 +49,7 @@ p {
 }
 
 #header {
-    color: rgb(255, 0, 0);
+    /* color: rgb(255, 0, 0); */
     /* выравнивание: по левому краю, по правому краю, по центру, по ширене */
     text-align: center;
 
@@ -66,14 +72,14 @@ p {
 }
 
 .new {
-    color: aqua;
+    /* color: aqua; */
 
     /* Сокращённая форма записи для шрифта*/
     /* font-style: italic; курсив
     font-weight: bold; жирный
     font-size: 16px;размер 
     font-family: Tahoma;шрифт*/
-    font: italic bold 16px Tahoma;
+    /* font: italic bold 16px Tahoma; */
     /* а можно и так: font: 16px Tahoma; */
     
 }
@@ -101,13 +107,13 @@ a:active {
 }
 
 .new2 {
-    color: black;
+    /* color: black; */
     /* italic - курсив */
     font-style: italic;
 }
 
 .new3 {
-    color: brown;
+    /* color: brown; */
     /* жирность шрифта  normal, bold - полужирный, 100 - 900*/
     font-weight: bold;
 }
@@ -150,6 +156,3 @@ ul{
 
 }
 
-ul li {
-    border: 1px solid gray;
-}
