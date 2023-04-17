@@ -155,8 +155,12 @@ ul{
     /* list-style-position:inside; */
 
     list-style:inside url(../images/marker.png) ;
+    
+    /* Если элемент наследует какой то свойство от двух вышестоящих родителей, то будет использоваться всегда
+    свойствоот ближайшего родителя */
     color: red;
-
-
+}
+li{
+    color: aqua;
 }
 
