@@ -1,11 +1,16 @@
 #div1{
-    margin: 0 0 30px 0;
+    margin: 30px 0 0 0;
     padding: 0;
+    
+    /* чтобы избавиться от вложенного конфликта можем задать рамки */
+    border: 1px solid red;
+
+    /* чтобы не возникали конфликты нужно использовать у вложенного элемента padding */
 }
 
 #p1{
     margin: 20px 0 0 0;
     padding: 0;
 
-
+    border: 1px solid green;
 }

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Конфликт полей</title>
-        <link rel="stylesheet" href="css/style_conflict.css" type="text/css">
 
-    </head>
-    <body>
-        <!-- 1 конфликт полей если два элемента сталкиваются между собой полями то браузер берёт большее по размеру поля -->
-        <div id="div1">это тэг DIV</div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Конфликт полей</title>
+    <link rel="stylesheet" href="css/style_conflict.css" type="text/css">
+
+</head>
+
+<body>
+    <!-- 1 конфликт полей если два элемента сталкиваются между собой полями то браузер берёт большее по размеру поля -->
+    <!-- 2 конфликт вложенных элементов, поля вложенного и родителя сталкиваются между собой то поле выскакивает запределы
+        родителя и оставляется большее из них -->
+    <div id="div1">
         <p id="p1">Это параграф</p>
-        
-    </body>
+    </div>
+
+
+</body>
+
 </html>
