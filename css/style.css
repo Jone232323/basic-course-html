@@ -11,8 +11,11 @@ body{
     /* border: 2px solid gold; */
 
     /* сбрасываем первоночальные отступы */
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
+
+    /* чтобы элементы не прилегали в плотную к body установим padding */
+    padding: 15px;
 
 }
 
