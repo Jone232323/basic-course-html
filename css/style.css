@@ -216,3 +216,9 @@ ul{
     color: coral;
 }
 
+ol li{
+    /* inline - встроенный, все тэги li привратятся во встроенный элемент */
+    display: inline;
+    border: 2px solid blue;
+}
+
