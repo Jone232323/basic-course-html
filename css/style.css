@@ -152,10 +152,15 @@ a:active {
     font-style: italic;
 }
 
-.new3 {
+.span1 {
     /* color: brown; */
     /* жирность шрифта  normal, bold - полужирный, 100 - 900*/
     font-weight: bold;
+    border: 3px solid red;
+
+    /* у встроенных элементов неработает margin-top, margin-bottom, padding-top, padding-bottom */
+    padding: 0 30px;
+    
 }
 
 .new4 {
