@@ -160,6 +160,9 @@ a:active {
 
     /* у встроенных элементов неработает margin-top, margin-bottom, padding-top, padding-bottom */
     padding: 0 30px;
+
+    /* превращаем встроенный элемент span в блочный */
+    display: block;
     
 }
 
