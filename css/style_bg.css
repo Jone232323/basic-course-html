@@ -18,6 +18,10 @@ body{
     /* background-image: url(../images/custom_background.jpg); */
     background-image: url(../images/bg_new.png);
 
+    /* на случай если человек отключил картинки в своём браузере, необходимо чтобы стоял background-color */
+    background-color: azure;
+    
+
     /* чтобы контуры не исчезали */
     outline: 0px solid;
 }
