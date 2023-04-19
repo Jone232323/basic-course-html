@@ -18,7 +18,7 @@ body{
     padding: 15px;
 
     /* фон */
-    background-color: bisque;
+    background-color: white;
 
 }
 
@@ -213,4 +213,30 @@ ul{
     color: coral;
 }
 
+/* селектор для всех таблиц и рамок */
+table, td, th{
+border: 1px solid red;
+text-align: center;
+}
 
+table{
+    width: 700px;
+    /* как должны себя вести рамки при прикосновении */
+    /* collapse - слитно не разделяется */
+    border-collapse:collapse ;
+    margin: 0 auto 0 auto;
+}
+td, th{
+    height: 50px;
+    padding: 5px;
+
+    /* вертикальное выравнивание */
+    vertical-align:top;
+}
+th{
+    background-color:antiquewhite;
+}
+
+tr.blue td{
+    background-color: rgb(230, 255, 255);
+}
