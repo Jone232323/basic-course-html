@@ -15,7 +15,8 @@ body{
     margin: 29px auto 0 auto;
 
     /* устанавливаем изображение как фон */
-    background-image: url(../images/custom_background.jpg);
+    /* background-image: url(../images/custom_background.jpg); */
+    background-image: url(../images/bg_new.png);
 
     /* чтобы контуры не исчезали */
     outline: 0px solid;
