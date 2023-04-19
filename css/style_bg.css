@@ -6,12 +6,14 @@ body{
     /* background-repeat: no-repeat;не повторять */
     /* background-repeat: repeat-y;повтрять только по Y */
      background-repeat: repeat-x;/*повторять только по X */
+     padding: 0;
+     margin: 0;
     
 }
 
 #div1{
     width: 800px;
-    height: 420px;
+    height: 991px;
     margin: 29px auto 0 auto;
 
     /* устанавливаем изображение как фон */
@@ -32,5 +34,11 @@ body{
     /* лучше использовать padding-top чем margin-top, был бы конфликт полей*/
     padding-top: 182px;
     font: 36px Verdana;
+}
 
+#wrapper{
+    outline: 1px solid blue;
+    background-image: url(../images/new_img.png);
+    background-repeat: no-repeat;
+    background-position: 0px 120px;
 }
