@@ -1,6 +1,12 @@
 body{
     background-color: bisque;
     background-image: url(../images/ava7patterns_pattern_957.png);
+
+    /* запретить повторение по вертикали */
+    /* background-repeat: no-repeat;не повторять */
+    /* background-repeat: repeat-y;повтрять только по Y */
+     background-repeat: repeat-x;/*повторять только по X */
+    
 }
 
 #div1{
