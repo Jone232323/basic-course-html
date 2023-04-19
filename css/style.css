@@ -17,6 +17,9 @@ body{
     /* чтобы элементы не прилегали в плотную к body установим padding */
     padding: 15px;
 
+    /* фон */
+    background-color: bisque;
+
 }
 
 
@@ -109,6 +112,11 @@ p {
 
     /* выравнивание блока, относительно родителя, в нащем случае относительно body */    
     margin: 20px auto 10px auto;/*в таком случае right and left одинаковые, и будут по середине */
+
+    /* фон распространяется для содержимова и на отступы */
+    background-color: red;
+
+    color: white;
 }
 
 .new {
@@ -150,20 +158,6 @@ a:active {
     /* color: black; */
     /* italic - курсив */
     font-style: italic;
-}
-
-.span1 {
-    /* color: brown; */
-    /* жирность шрифта  normal, bold - полужирный, 100 - 900*/
-    font-weight: bold;
-    border: 3px solid red;
-
-    /* у встроенных элементов неработает margin-top, margin-bottom, padding-top, padding-bottom */
-    padding: 0 30px;
-
-    /* превращаем встроенный элемент span в блочный */
-    display: block;
-    
 }
 
 .new4 {
@@ -219,9 +213,4 @@ ul{
     color: coral;
 }
 
-ol li{
-    /* inline - встроенный, все тэги li привратятся во встроенный элемент */
-    display: inline;
-    border: 2px solid blue;
-}
 

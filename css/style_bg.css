@@ -1,0 +1,24 @@
+body{
+    background-color: bisque;
+}
+
+#div1{
+    width: 800px;
+    height: 420px;
+    margin: 29px auto 0 auto;
+
+    /* устанавливаем изображение как фон */
+    background-image: url(../images/custom_background.jpg);
+
+    /* чтобы контуры не исчезали */
+    outline: 1px solid;
+}
+#div1 h1{
+    text-align: center;
+    color: white;
+    outline: 1px solid red;
+    /* лучше использовать padding-top чем margin-top, был бы конфликт полей*/
+    padding-top: 182px;
+    font: 36px Verdana;
+
+}
