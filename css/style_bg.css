@@ -1,5 +1,6 @@
 body{
     background-color: bisque;
+    background-image: url(../images/ava7patterns_pattern_957.png);
 }
 
 #div1{
@@ -11,12 +12,12 @@ body{
     background-image: url(../images/custom_background.jpg);
 
     /* чтобы контуры не исчезали */
-    outline: 1px solid;
+    outline: 0px solid;
 }
 #div1 h1{
     text-align: center;
     color: white;
-    outline: 1px solid red;
+    outline: 0px solid red;
     /* лучше использовать padding-top чем margin-top, был бы конфликт полей*/
     padding-top: 182px;
     font: 36px Verdana;
