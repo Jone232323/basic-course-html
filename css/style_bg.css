@@ -37,8 +37,17 @@ body{
 }
 
 #wrapper{
-    outline: 1px solid blue;
+    outline: 0px solid blue;
+
+    /* background-color: azure;
     background-image: url(../images/new_img.png);
-    background-repeat: no-repeat;
-    background-position: 0px 120px;
+    background-repeat: no-repeat;  
+    /* чтобы спозиционировать от окна браузера нужно использовать background-attachment*/
+    /* background-attachment: fixed; */
+
+    /* позиционерование изображения */
+    /* background-position: 0px 150px; */ 
+
+    /* сокращённая форма background цвет картинка no-repeat fixed позиция*/
+    background: url(../images/new_img.png) no-repeat fixed 0px 150px;
 }
