@@ -225,6 +225,7 @@ table{
     /* collapse - слитно не разделяется */
     border-collapse:collapse ;
     margin: 0 auto 0 auto;
+    background-color: bisque;
 }
 td, th{
     height: 50px;
@@ -234,7 +235,9 @@ td, th{
     vertical-align:top;
 }
 th{
+    /* загаловку таблицы можно задавать не только фон но и картинку */
     background-color:antiquewhite;
+    background-image: url(../images/ava7patterns_pattern_957.png);
 }
 
 tr.blue td{
