@@ -24,6 +24,9 @@ textarea {
     background-color: #f4f9ff;
     width: 480px;
     margin: 0px 10px;
+    
+    /* на текстовую область не наследуется шрифт от body */
+    font: 13px Verdana, sans-serif;
 }
 
 textarea:focus {
