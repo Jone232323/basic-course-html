@@ -6,3 +6,14 @@ body{
 #wrapper{
     width: 500px;
 }
+
+.question{
+    font-weight: bold;
+}
+
+fieldset{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid red;
+    background-color: #fcfcfc;
+}
