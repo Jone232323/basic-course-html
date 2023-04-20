@@ -1,7 +1,6 @@
 body {
     font: 13px Verdana, sans-serif;
     color: darkslateblue;
-
 }
 
 #wrapper {
@@ -50,4 +49,9 @@ textarea:focus {
     border: 2px solid blue;
     background: none;
     background-color: white;
+}
+
+/* добавим курсор в виде руки для всех label */
+label {
+    cursor: pointer;
 }
