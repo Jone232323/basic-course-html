@@ -34,7 +34,14 @@ textarea {
 .input {
     border: 1px solid #333333;
     height: 27px;
-    background-image:url(../images/input-bg.png);
+    background-image: url(../images/input-bg.png);
     background-repeat: repeat-x;
     width: 320px;
+}
+
+/* принаведении когда элемент input в фокусе будем использовать другие параметры */
+.input:focus {
+    border: 2px solid blue;
+    background: none;
+    background-color: white;
 }
