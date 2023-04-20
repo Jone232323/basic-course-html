@@ -15,7 +15,7 @@ body {
 fieldset {
     padding: 10px;
     margin: 10px;
-    border: 1px solid red;
+    border: 1px solid #333333;
     background-color: #f4f9ff;
 
 }
@@ -29,4 +29,12 @@ textarea {
 
 .tr {
     margin: 0 10px;
+}
+
+.input {
+    border: 1px solid #333333;
+    height: 27px;
+    background-image:url(../images/input-bg.png);
+    background-repeat: repeat-x;
+    width: 320px;
 }
