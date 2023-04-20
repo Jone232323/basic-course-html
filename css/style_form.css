@@ -1,5 +1,8 @@
 body{
     font: 13px Verdana, sans-serif;
     color: darkslateblue;
+}
 
+#wrapper{
+    width: 500px;
 }

@@ -9,81 +9,75 @@
 </head>
 
 <body>
-    <!-- создание формы  -->
-    <form action="formdata.php" method="post" name="form1">
-        <!-- fieldset применяется для разграничения -->
-        <fieldset>
-            <!-- чтобы рамка была именная используется тег legend -->
-            <legend>ввод личных данных</legend>
-            <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
-            <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
-            <p><label>Введите ваше имя:<input type="text" name="name1"></label></p>
-        </fieldset>
-        <!-- сделаем поле длиннее -->
-        <p><label>Введите ваше имя:<input type="text" name="name2" size="30"></label></p>
-        <!-- ограничение по количеству вводу символов -->
-        <p><label>Введите ваше имя(мак 10):<input type="text" name="name3" size="30" maxlength="10"></label></p>
-        <!-- поля ввода для пароля -->
-        <p><label>Введите ваше пароль(мак 10):<input type="password" name="password" size="30" maxlength="10"></label></p>
-
-        <fieldset>
-            <legend>Вопросы</legend>
-            <!-- добавляем радио кнопку name="time" говорит нам что две кнопки находятся в одной группе-->
-            <!-- атрибут checked делает кнопку по умолчанию  -->
-            <p>Любите ли вы экономить время? <label>Да<input type="radio" name="time" value="yes" checked></label>
-                <label>Нет<input type="radio" name="time" value="no"></label>
-            </p>
-            <!-- добавили кнопки checkbox -->
-            <p>Какими инструментами вы пользуетесь?</p>
+    <div id="wrapper">
+        <!-- создание формы  -->
+        <form action="formdata.php" method="post" name="form1">
+            <!-- fieldset применяется для разграничения -->
+            <fieldset>
+                <!-- чтобы рамка была именная используется тег legend -->
+                <legend>ввод личных данных</legend>
+                <p>Введите ваше имя:<input type="text" name="name" placeholder="ваше имя"></p>
+                <!-- щелчёк по тексту Введите ваше имя: будет активировать поле для ввода -->
+                <p><label>Введите ваше имя:<input type="text" name="name1"></label></p>
+            </fieldset>
+            <!-- сделаем поле длиннее -->
+            <p><label>Введите ваше имя:<input type="text" name="name2" size="30"></label></p>
+            <!-- ограничение по количеству вводу символов -->
+            <p><label>Введите ваше имя(мак 10):<input type="text" name="name3" size="30" maxlength="10"></label></p>
+            <!-- поля ввода для пароля -->
+            <p><label>Введите ваше пароль(мак 10):<input type="password" name="password" size="30" maxlength="10"></label></p>
+            <fieldset>
+                <legend>Вопросы</legend>
+                <!-- добавляем радио кнопку name="time" говорит нам что две кнопки находятся в одной группе-->
+                <!-- атрибут checked делает кнопку по умолчанию  -->
+                <p>Любите ли вы экономить время? <label>Да<input type="radio" name="time" value="yes" checked></label>
+                    <label>Нет<input type="radio" name="time" value="no"></label>
+                </p>
+                <!-- добавили кнопки checkbox -->
+                <p>Какими инструментами вы пользуетесь?</p>
+                <p>
+                    <!-- добавили атрибут disabled делает элемент неактивным -->
+                    <label><input type="checkbox" name="ez" checked>Ежедневник</label>
+                    <label><input type="checkbox" name="pen">Ручка</label>
+                </p>
+                <!-- добавляем элемент выбора select -->
+                <!-- атрибут size указывает сколько видимых значений сразу будет открыто -->
+                <!-- атрибут multiple используется для возможности выбора нескольких значений -->
+                <p>Сколько часов вы спите?</p>
+                <p>
+                    <select name="hour" id="hour1" size="4" multiple>
+                        <option>один</option>
+                        <option>два</option>
+                        <option>три</option>
+                        <option>четыре</option>
+                    </select>
+                </p>
+            </fieldset>
+            <p>Сколько часов вы спите второй вариант?</p>
             <p>
-                <!-- добавили атрибут disabled делает элемент неактивным -->
-                <label><input type="checkbox" name="ez" checked>Ежедневник</label>
-                <label><input type="checkbox" name="pen">Ручка</label>
-            </p>
-            <!-- добавляем элемент выбора select -->
-            <!-- атрибут size указывает сколько видимых значений сразу будет открыто -->
-            <!-- атрибут multiple используется для возможности выбора нескольких значений -->
-            <p>Сколько часов вы спите?</p>
-            <p>
-                <select name="hour" id="hour1" size="4" multiple>
+                <select name="hour" id="hour1">
                     <option>один</option>
-                    <option>два</option>
-                    <option>три</option>
-                    <option>четыре</option>
+                    <option value="2">два</option>
+                    <!-- атрибут selected указывает что данное значение будет по умолчанию -->
+                    <option selected>три</option>
+                    <option value="4">четыре</option>
                 </select>
             </p>
-        </fieldset>
-
-
-        <p>Сколько часов вы спите второй вариант?</p>
-        <p>
-            <select name="hour" id="hour1">
-                <option>один</option>
-                <option value="2">два</option>
-                <!-- атрибут selected указывает что данное значение будет по умолчанию -->
-                <option selected>три</option>
-                <option value="4">четыре</option>
-            </select>
-        </p>
-
-        <!-- добавляем элемент текстовой области и к нему применим атрибут  readonly только для чтения-->
-        <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
-        <p><textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных"
-                placeholder="напиши">Тестовый текст...</textarea></p>
-
-        <!-- добавляем кнопка отправки данных -->
-        <p><input type="submit" name="submit-btn" value="Отправить">
-            <!-- добавляем кнопка очистки -->
-            <input type="reset" name="reset-btn" value="Сброс">
-        </p>
-
-        <!-- кнопки своя картинка отправка  -->
-        <p><input type="image" src="images/ibutton.png" name="img-btn"></p>
-
-        <!-- просто кнопк не только для формы нужна будет для работы с Javascryp sql  -->
-        <p><input type="button" value="Кнопка" name="button"></p>
-
-    </form>
+            <!-- добавляем элемент текстовой области и к нему применим атрибут  readonly только для чтения-->
+            <p><label for="text1">Поделитесь своими наработками в экономии времени:</label></p>
+            <p><textarea name="text" id="text1" cols="50" rows="10" title="текстовое поля для ввода данных"
+                    placeholder="напиши">Тестовый текст...</textarea></p>
+            <!-- добавляем кнопка отправки данных -->
+            <p><input type="submit" name="submit-btn" value="Отправить">
+                <!-- добавляем кнопка очистки -->
+                <input type="reset" name="reset-btn" value="Сброс">
+            </p>
+            <!-- кнопки своя картинка отправка  -->
+            <p><input type="image" src="images/ibutton.png" name="img-btn"></p>
+            <!-- просто кнопк не только для формы нужна будет для работы с Javascryp sql  -->
+            <p><input type="button" value="Кнопка" name="button"></p>
+        </form>
+    </div>
 
 </body>
 
