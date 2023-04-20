@@ -27,6 +27,12 @@ textarea {
     margin: 0px 10px;
 }
 
+textarea:focus {
+    border: 2px solid blue;
+    background: none;
+    background-color: white;
+}
+
 .tr {
     margin: 0 10px;
 }
