@@ -1,6 +1,7 @@
 body{
     font: 13px Verdana, sans-serif;
     color: darkslateblue;
+    
 }
 
 #wrapper{
@@ -15,5 +16,14 @@ fieldset{
     padding: 10px;
     margin: 20px;
     border: 1px solid red;
-    background-color: #fcfcfc;
+    background-color: #f4f9ff;
+    
 }
+
+textarea{
+    border: 1px solid #333333;
+    background-color: #f4f9ff;
+    width: 480px;
+    margin: 0px 10px;    
+}
+
