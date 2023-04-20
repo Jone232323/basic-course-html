@@ -1,29 +1,32 @@
-body{
+body {
     font: 13px Verdana, sans-serif;
     color: darkslateblue;
-    
+
 }
 
-#wrapper{
+#wrapper {
     width: 500px;
 }
 
-.question{
+.question {
     font-weight: bold;
 }
 
-fieldset{
+fieldset {
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border: 1px solid red;
     background-color: #f4f9ff;
-    
+
 }
 
-textarea{
+textarea {
     border: 1px solid #333333;
     background-color: #f4f9ff;
     width: 480px;
-    margin: 0px 10px;    
+    margin: 0px 10px;
 }
 
+.tr {
+    margin: 0 10px;
+}
