@@ -243,3 +243,9 @@ th{
 tr.blue td{
     background-color: rgb(230, 255, 255);
 }
+
+#myImg{
+    /* свойство float отвечает за оптикания элемента, для картинки, но в основном оно используется для блоков div*/
+    float:right;
+    margin: 20px 0 20px 50px;
+}
