@@ -17,11 +17,18 @@
     width: 150px;
     float: left;
 }
+#sidebar_right {
+    height: 77px;
+    background-color: rgb(199, 233, 239);
+    margin-bottom: 12px;
+    width: 150px;
+    float: right;
+}
 #content {
     height: 77px;
     background-color: rgb(255, 0, 0);
     margin-bottom: 12px;
-    width: 540px;
+    width: 380px;
     margin-left: 160px;
 }
 #footer {
