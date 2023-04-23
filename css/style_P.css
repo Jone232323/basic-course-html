@@ -44,6 +44,16 @@ body {
     position: absolute;
     top: -14px;
     left: 294px;
+    z-index: 2;
+}
+#bird {
+    /* этот элемент позицианируется относительно элемента header, не от браузера */
+    position: absolute;
+    top: -3px;
+    left: 295px;
+
+    /* чтобы птица была выше чем кнопка button_P нужно и кнопки задать z-index меньше чем птицы */
+    z-index: 4;
 }
 
 #operator {
@@ -54,6 +64,5 @@ body {
     height: 180px;
     top: 250px;
     left: 0;
-
 
 }
