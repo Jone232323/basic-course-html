@@ -45,3 +45,9 @@ body {
     top: -14px;
     left: 294px;
 }
+
+#operator {
+    position: fixed;
+    width: 22px;
+    height: 180px;
+}
