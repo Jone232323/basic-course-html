@@ -1,76 +1,32 @@
 body {
     background-color: #aeadad;
     font: 11px Verdana;
-    color: rgb(54, 54, 54);
+    color: #696969;
 }
 
 #wrapper {
-    width: 650px;
     background-color: #f4f4f4;
     margin: 30px auto;
+    height: 520px;
 }
 
-#header {
-    height: 75px;
-    /* background-color: red; */
-    background-image: url(../images/redHeader.png);
-    position: relative;
+#sideberL {
+    width: 200px;
+    height: 500px;
+    float: left;
+    outline: 1px solid red;
+}
+
+#sideberR {
+    width: 200px;
+    height: 500px;
+    float: right;
+    outline: 1px solid red;
 }
 
 #content {
-    padding: 20px 30px 20px 30px;
-}
-
-#new {
-    /* если установить свойство position: absolute, то для текста наша картинка становится не видимая, и текст занимает её место
-    тоесть наша картинка позицианируется обсалюно и не зависит ни от каких других тегов на странице, и позицианируется относительно окна браузера */
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    /* bottom: 50px;
-    right: 50px; */
-
-    /* relative - относительное позиционерование, картинка так же преподнялась над основным контентом и мы её можем двигать,
-    только при таком позиционировании другие теги не могут занимать пространство, которое занимает картинка,
-    и она позиционируется относительно своей первоночальной позиции и даже когда мы переместим, его позицию ни один тэг не сможет забрать */
-    /* position: relative; */
-    /* left: 50px;
-    top: 120px; */
-}
-
-#button_P {
-    /* этот элемент позицианируется относительно элемента header, не от браузера */
-    position: absolute;
-    top: -14px;
-    left: 294px;
-    z-index: 2;
-}
-#bird {
-    /* этот элемент позицианируется относительно элемента header, не от браузера */
-    /* свойство position нелзя использовать вместе с float */
-    position: absolute;
-    top: -3px;
-    left: 295px;
-
-    /* чтобы птица была выше чем кнопка button_P нужно и кнопки задать z-index меньше чем птицы */
-    z-index: 4;
-}
-
-#operator {
-    /* position: fixed - похож на absolute, только при прокрутки
-    страницы элемент остаётся на выбранной облости экрана, позицианируется ВСЕГДА  только относительно окна браузера */
-    position: fixed;
-    width: 22px;
-    height: 180px;
-    top: 250px;
-    left: 0;
-
-}
-
-#test {
-    /* свойство видимости hidden- невиден*/   
-    /* visibility: hidden; при таком варианте у нас скрылся абзац, но его место ни кто не занял */
+    height: 500px;
+    margin: 0px 220px 0 220px;
+    outline: 1px solid brown;
     
-    display: none;/*при таком варианте не только скрылся абзац,но и удаляем его из потока и другие тэги занимают его места */
 }
