@@ -5,9 +5,13 @@ body {
 }
 
 #wrapper {
+    /* блок должен занимать всё доступное иму по ширене пространство, но не менее 650px */
     background-color: #f4f4f4;
     margin: 30px auto;
     height: 520px;
+    
+    /* не даёт уменьшатся нашему сайту  */
+    min-width: 650px;
 }
 
 #sideberL {
