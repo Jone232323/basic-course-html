@@ -1,5 +1,8 @@
+/* подключение дополнительной таблицы стилей */
+@import url(style_new_import.css);
+
 body {
-    background-color: #aeadad;
+    
     font: 11px Verdana;
     color: #696969;
 }
